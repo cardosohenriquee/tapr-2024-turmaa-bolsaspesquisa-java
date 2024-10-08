@@ -1,4 +1,6 @@
-package br.univille;
+package br.univille.microservicegestaobolsistapesquisa.criacaodebolsas.entity;
+
+import java.util.UUID;
 
 public class Bolsa {
     private UUID id;
@@ -11,7 +13,7 @@ public class Bolsa {
 
     public Bolsa() {}
 
-    public Bolsa(Long id, Long idALuno, Long idProjeto, Long idCurso, Int duracao, String descricao, Boolean statusBolsa) {
+    public Bolsa(UUID id, UUID idALuno, UUID idProjeto, UUID idCurso, Int duracao, String descricao, Boolean statusBolsa) {
         this.id = id;
         this.idALuno = idALuno;
         this.idProjeto = idProjeto;
@@ -22,35 +24,35 @@ public class Bolsa {
         
     }
 
-    public Long getId() {
+    public UUID getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(UUID id) {
         this.id = id;
     }
 
-    public Long getIdAluno() {
+    public UUID getIdAluno() {
         return idAluno;
     }
 
-    public void setIdAluno(Long idAluno) {
+    public void setIdAluno(UUID idAluno) {
         this.idAluno = idAluno;
     }
 
-    public Long getIdProjeto() {
+    public UUID getIdProjeto() {
         return idProjeto;
     }
 
-    public void setIdProjeto(Long idProjeto) {
+    public void setIdProjeto(UUID idProjeto) {
         this.idProjeto = idProjeto;
     }
 
-    public Long getIdCurso() {
+    public UUID getIdCurso() {
         return idCurso;
     }
 
-    public void setIdCurso(Long idCurso) {
+    public void setIdCurso(UUID idCurso) {
         this.idCurso = idCurso;
     }
 
